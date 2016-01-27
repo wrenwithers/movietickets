@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="specs/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Tickets</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add Specifics:</h2>
+
+          <form id="new-ticket">
+
+            <div class="btn-group"><div id="new-movie">
+              <button type="button" class="btn btn-warning">Movie Type</button>
+              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">First Run</a></li>
+                <li><a href="#">Still In Theaters</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+
+            <div class="btn-group"><div id="new-time">
+              <button type="button" class="btn btn-success">Time</button>
+              <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Matinee (before 4pm)</a></li>
+                <li><a href="#">Evening</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+
+            <div class="btn-group"><div id="new-age">
+              <button type="button" class="btn btn-info">Age/Group</button>
+              <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Under 12</a></li>
+                <li><a href="#">12-59</a></li>
+                <li><a href="#">60+</a></li>
+                <li><a href="#">Student (Must Have ID)</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </div>
+
+            <button type="submit" class="btn btn-danger">Add</button>
+            <br></br>
+
+
+          <div class="form-group"><div id="new-price">
+            <label for="new-last-name">Your Price</label>
+            <input type="text" class="form-control" id="new-price">
+          </div>
+        </div>
+
+        </form>
+
+          <h2>Purchased Tickets:</h2>
+          <ul id="contacts">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
